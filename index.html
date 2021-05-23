@@ -133,7 +133,7 @@
         </div>
 
         <!-- User Experience -->
-        <div class="testimonials">
+        <div class="testimonials"></div>
             <div class="review-box">
                 <div class="comment">
                     <img src="assets/r1.PNG" alt="">
@@ -174,13 +174,14 @@
                             perferendis corrupti dolore, et enim tenetur eveniet asperiores pariatur!</p>
                     </div>
                 </div>
-                <div class="scroll">
-                    <div>
-                        <i class="fas fa-arrow-circle-up" onclick="up()" id="uparrow"></i>
-                    </div>
-                    <div>
-                        <i class="fas fa-arrow-circle-down" onclick=down() id="downarrow"></i>
-                    </div>
+               
+            </div>
+            <div class="scroll">
+                <div>
+                    <a><i class="fas fa-arrow-circle-up" onclick="up()" id="uparrow"></i></a>
+                </div>
+                <div>
+                    <i class="fas fa-arrow-circle-down" onclick=down() id="downarrow"></i>
                 </div>
             </div>
         </div>
@@ -222,17 +223,26 @@
             <p class="copyright">Copyright 2021 - Rohit Sachdeva </p>
 
         </div>
+        
       <script>
 
           let uparrow=document.getElementById("uparrow")
           let downarrow=document.getElementById("downarrow")
-          let review=document.getElementById("review-box");
+          let review=document.querySelector(".review-box");
           let x=0;
             function up(){
-
+                if(x>-900){
+                    x=x-300;
+                review.style.top=x+"px"
+                }
+                
             }
 
             function down(){
+                if(x>-900){
+                    x=x+300;
+                review.style.top=x+"px"
+                }
                 
             }
 

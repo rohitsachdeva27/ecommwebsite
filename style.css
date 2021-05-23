@@ -165,29 +165,32 @@ small{
     color:#ff523b
 }
 .testimonials{
-    
-
-}
-
-.review-box{
     width: 800px;
     height:300px;
-    margin:auto;
-    background: rgb(247, 174, 198);
-    margin-top:50px;
-    border-radius: 25px;
-    margin-bottom: 50px;
-    position: relative;
-    overflow: hidden;    
+ position: relative;
+  margin:auto;
+  background: rgb(247, 174, 198);
+  margin-top:50px;
+  border-radius: 25px;
+  margin-bottom: 50px;  
+  
+}
+
+.review-box{     
+    width: 100%;
+    height:300px;
+    position:relative;    
+    top:0;
+    left:0;     
+    overflow: hidden;  
 }
 
 .comment{
     height:100%;
     width:600px;
-    padding:10px;
-    display: flex;    
-    position: relative;
-    transform: translateY(-600px);
+    padding:40px;
+    display: flex;        
+    box-sizing: border-box;    
 }
 .comment img{
 width:100px;
